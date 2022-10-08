@@ -1,0 +1,109 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+
+    <!--- LOGO --->
+    <div class= "logo">
+      <a href="{{ url_for('index') }}"><img src="https://static.igem.wiki/teams/4317/wiki/seoul-korea-1.png" alt="logo" width="75" height="75"></a>
+    </div>
+
+    <!---- TEAM NAME ---->
+    <a class="navbar-brand" href="{{ url_for('index') }}" style="color: #000000">
+      Seoul Korea
+    </a>
+
+    <!---- SMALL SCREEN MENU ICON ---->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto left-aligned">
+
+        <!---- HOME ---->
+        <div class="dropdown">
+          <button class="dropbtn" onclick="window.location.href='{{ url_for( 'index') }}';">Home</button>
+        </div>
+        
+        <!---- TEAM ---->
+        <div class="dropdown">
+          <button class="dropbtn">Team</button>
+          <div class="dropdown-content">
+            <a href="{{ url_for('pages', page='team') }}">Members</a>
+            <a href="{{ url_for('pages', page='attributions') }}">Attributions</a>
+            <a href="{{ url_for('pages', page='collaborations') }}">Collaborations</a>
+            <a href="{{ url_for('pages', page='partnership') }}">Partnership</a>
+          </div>
+        </div>
+
+        <!---- PROJECT ---->
+        <div class="dropdown">
+          <button class="dropbtn">Project</button>
+          <div class="dropdown-content">
+            <a class="dropdown-item" href="{{ url_for('pages', page='description') }}">Description</a></li>
+            <a class="dropdown-item" href="{{ url_for('pages', page='engineering') }}">Engineering Success</a>
+            <a class="dropdown-item" href="{{ url_for('pages', page='proof-of-concept') }}">Proof of Concept</a></li>
+            <a class="dropdown-item" href="{{ url_for('pages', page='implementation') }}">Implementation</a></li>
+          </div>
+        </div>
+
+        <!-- Entrepreneurship -->
+        <div class="dropdown">
+          <button class="dropbtn" onclick="window.location.href='{{ url_for('pages', page='entrepreneurship') }}';">Entrepreneurship</button>
+        </div>
+
+        <!---- HUMAN PRACTICES ---->
+        <div class="dropdown">
+          <button class="dropbtn">Human Practices</button>
+          <div class="dropdown-content">
+            <a class="dropdown-item" href="{{ url_for('pages', page='human-practices') }}">Human Practices</a>
+            <a class="dropdown-item" href="{{ url_for('pages', page='education') }}">Education</a>
+            <a class="dropdown-item" href="{{ url_for('pages', page='communication') }}">Communication</a>
+            <a class="dropdown-item" href="{{ url_for('pages', page='sustainable') }}">SDG</a>
+            <a class="dropdown-item" href="{{ url_for('pages', page='inclusivity') }}">Inclusivity</a>
+          </div>
+        </div>
+
+        <!---- Lab ---->
+        <div class="dropdown">
+          <button class="dropbtn">Lab</button>
+          <div class="dropdown-content">
+            <a class="dropdown-item" href="{{ url_for('pages', page='safety') }}">Safety & Security</a>
+            <a class="dropdown-item" href="{{ url_for('pages', page='hardware') }}">Hardware</a>
+            <a class="dropdown-item" href="{{ url_for('pages', page='experiments') }}">Experiments</a>
+            <a class="dropdown-item" href="{{ url_for('pages', page='results') }}">Results</a>
+            <a class="dropdown-item" href="{{ url_for('pages', page='notebook') }}">Notebook</a>
+          </div>
+        </div>
+
+        <!---- PARTS ---->
+        <div class="dropdown">
+          <button class="dropbtn">Parts</button>
+          <div class="dropdown-content">
+            <a class="dropdown-item" href="{{ url_for('pages', page='part-collection') }}">Parts List</a>
+            <a class="dropdown-item" href="{{ url_for('pages', page='parts') }}">Parts</a>
+            <a class="dropdown-item" href="{{ url_for('pages', page='improve') }}">Improve</a>
+            <a class="dropdown-item" href="{{ url_for('pages', page='contribution') }}">Contribution</a>
+          </div>
+        </div>
+
+        <!---- MODEL ---->
+        <div class="dropdown">
+          <button class="dropbtn">Model</button>
+          <div class="dropdown-content">
+            <a class="dropdown-item" href="{{ url_for('pages', page='measurement') }}">Measurement</a>
+            <a class="dropdown-item" href="{{ url_for('pages', page='model') }}">Modeling</a>
+          </div>
+        </div>
+
+        <!---- AWARDS ---->
+        <div class="dropdown">
+          <button class="dropbtn">Awards</button>
+          <div class="dropdown-content">
+            <a class="dropdown-item" href="{{ url_for('pages', page='judging-form') }}">Judging Form</a>
+          </div>
+        </div>
+
+      </ul>
+    </div>
+  </div>
+</nav>
