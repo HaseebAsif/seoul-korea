@@ -41,7 +41,7 @@ The static assets are in the `static` directory. The layout and templates are in
     |__ app.py              -> Python code managing your wiki
     |__ dependencies.txt    -> Software dependencies from the Python code
 
-### Technologies
+### Technologies used in the Project
 
   * [GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/)
   * [Python](https://www.python.org): Programming language
