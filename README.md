@@ -53,6 +53,8 @@ The static assets are in the `static` directory. The layout and templates are in
 
 To work locally with this project, you'll have to follow the steps below:
 
+My name is Harry
+
 #### Install
 ```bash
 git clone https://gitlab.igem.org/2022/seoul-korea
