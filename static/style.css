@@ -134,3 +134,6 @@ visibility: hidden !important;
 .bg-home {
     height: fit-content;
   }
+.display-4 {
+    font-weight: 700;
+}
