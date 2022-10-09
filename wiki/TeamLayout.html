@@ -17,10 +17,12 @@
 
 </head>
 <body>
-  <!-- Navigation -->
-  {% include 'menu.html' %}
+  <div class="team-page">
 
-  <!-- Header -->
+    <!-- Navigation -->
+    {% include 'menu.html' %}
+    
+    <!-- Header -->
   <header class="bg-team mb-5">
     <div class="container h-100">
       <div class="row h-100 align-items-center">
@@ -31,7 +33,7 @@
       </div>
     </div>
   </header>
-
+  
   <!-- Page Content -->
   <div class="container">
     {% block page_content %}{% endblock %}
@@ -45,5 +47,6 @@
 
   <!-- Bootstrap Bundle with Popper -->
   <script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
+</div>
 </body>
 </html>
