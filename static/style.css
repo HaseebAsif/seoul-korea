@@ -168,5 +168,5 @@ margin-bottom: 30px;
     grid-template-columns: auto auto;
 }
 .human-practices-images img{
-    width: 30vw;
+    width: 100%;
 }
