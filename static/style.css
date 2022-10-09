@@ -20,7 +20,7 @@ body {
 .bg-team {
   background-image: url("./group-2.png");
   background-size: cover;
-  height: 50vh;
+  height: 95vh;
   width: 100vw;
 }
 .bg-human {
