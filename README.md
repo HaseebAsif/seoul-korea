@@ -68,3 +68,10 @@ pip install -r dependencies.txt
 ```bash
 python app.py
 ```
+To Push the changes
+git add .
+git commit -m 'Message here'
+git push
+
+To Pull the Changes
+git pull
