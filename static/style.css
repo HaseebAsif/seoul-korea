@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400&family=Varela+Round&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400&family=Varela+Round&display=swap");
 body {
-  padding-top: 56px;
+  padding-top: 0;
   font-family: "Montserrat";
 }
 .left-aligned {
@@ -10,6 +10,10 @@ body {
 }
 .bg-light {
   background-color: white;
+}
+.bg-transparent {
+  background-color: transparent;
+  padding-top: 0;
 }
 .bg-dark {
   background-color: black !important;
@@ -23,11 +27,14 @@ body {
   height: 50vh;
   width: 100vw;
 }
+
 .bg-black {
   background-color: black;
 }
 .navbar-brand {
   font-weight: 600;
+  margin-left: 4px;
+  font-size: 24px;
 }
 .team-container {
   display: grid;
@@ -95,27 +102,43 @@ footer a:hover {
   object-fit: contain;
   margin: 10px 0;
 }
-/* CUSTOMIZED BELOW */
-
-/* change hamburger menu icon color */
-.navbar-dark .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+.nav-container {
+  flex-direction: row;
+  width: fit-content;
+  margin-right: inherit;
+  padding-right: 0;
 }
+/* CUSTOMIZED BELOW */
+.navbar-toggler {
+  margin-left: -60px;
+  width: fit-content;
+  top: 0px;
+  right: 35vw;
+  position: sticky;
+  border: 6px solid rgb(126, 217, 87) !important;
+  padding: 14px;
+  border-radius: 50%;
+  transition: all 1s ease-out;
+}
+/* change hamburger menu icon color */
 
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(116,177, 87)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
 .dropbtn {
   /* background-color: #04AA6d; */
   background-color: black; /* needs to be same as .bg-dark */
   color: white;
   padding: 8px;
-  font-size: 16px;
+  font-size: 18px;
   border: none;
 }
 
 /* container <div> needed to position the dropdown content */
 .dropdown {
-  position: relative;
   display: inline-block;
   text-align: center;
+  position: relative;
 }
 
 .dropdown-content {
@@ -214,4 +237,22 @@ footer a:hover {
 }
 .human-practices-images img {
   width: 30vw;
+}
+.navbar-collapse {
+  background-color: black;
+  width: 300px;
+  height: 100vh;
+  position: relative;
+  bottom: 74px;
+  transition: all 0.6s ease-in-out;
+}
+.navbar-nav {
+  width: 300px;
+  padding-top: 28px;
+  justify-content: center;
+}
+.hamburger {
+  position: relative;
+  top: 30px;
+  right: 20px;
 }
