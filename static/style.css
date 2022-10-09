@@ -27,16 +27,13 @@ body {
   height: 95vh;
   width: 100vw;
 }
-<<<<<<< HEAD
 
-=======
 .bg-human {
-    background-image: url("./hp-background.JPG");
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-  }
->>>>>>> 24b15aa89118422e018056d9dfd30f3befd8bfac
+  background-image: url("./hp-background.JPG");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
 .bg-black {
   background-color: black;
 }
@@ -247,7 +244,6 @@ footer a:hover {
 .human-practices-images img {
   width: 30vw;
 }
-<<<<<<< HEAD
 .navbar-collapse {
   background-color: black;
   width: 300px;
@@ -266,8 +262,6 @@ footer a:hover {
   top: 30px;
   right: 20px;
 }
-=======
-.human-practices-images img{
-    width: 100%;
+.human-practices-images img {
+  width: 100%;
 }
->>>>>>> 24b15aa89118422e018056d9dfd30f3befd8bfac
