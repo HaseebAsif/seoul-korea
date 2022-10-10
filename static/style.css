@@ -277,8 +277,8 @@ footer a:hover {
 .spinner-container {
   /* height: 100vh; */
   position: absolute;
-  top: 50%;
-  bottom: 50%;
+  /* top: 50%; */
+  bottom: 30%;
   left: 0;
   right: 0;
 }
@@ -286,4 +286,12 @@ footer a:hover {
   100% {
     transform: rotate(360deg);
   }
+}
+.loader-video {
+  height: 60px;
+  width: 60px;
+}
+.loader-container {
+  height: 300px;
+  width: 300px;
 }
