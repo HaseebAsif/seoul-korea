@@ -4,6 +4,7 @@
 body {
   padding-top: 0;
   font-family: "Montserrat";
+  background-color: black;
 }
 .left-aligned {
   margin-left: auto;
@@ -263,4 +264,25 @@ footer a:hover {
 }
 .human-practices-images img {
   width: 100%;
+}
+#spinner {
+  animation: spin 3s linear infinite;
+  color: rgb(126, 217, 87);
+  width: fit-content;
+  margin: auto;
+  height: fit-content;
+  padding: 0;
+}
+.spinner-container {
+  /* height: 100vh; */
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  left: 0;
+  right: 0;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
 }

@@ -5,6 +5,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
       rel="shortcut icon"
       href="https://static.igem.wiki/teams/4317/wiki/seoul-korea-favicon.jpeg"
     />
@@ -43,8 +47,12 @@
     </header> -->
 
     <!-- Page Content -->
-    <div class="container">{% block page_content %}{% endblock %}</div>
-
+    <div class="container">
+      {% block page_content %}{% endblock %}
+      <div class="spinner-container">
+        <p class="spinner" id="spinner"><i class="fa fa-spinner fa-5x"></i></p>
+      </div>
+    </div>
     <!-- Footer: MUST mention license AND have a link to team wiki's repository on gitlab.igem.org -->
     {% include 'footer.html' %}
 
@@ -53,5 +61,18 @@
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
+    <script>
+      document.onreadystatechange = function () {
+        if (document.readyState !== "complete") {
+          document.querySelector("body").style.visibility = "hidden";
+          document.querySelector("#spinner").style.visibility = "visible";
+        } else {
+          setTimeout(() => {
+            document.querySelector("#spinner").style.display = "none";
+            document.querySelector("body").style.visibility = "visible";
+          }, 2000);
+        }
+      };
+    </script>
   </body>
 </html>
