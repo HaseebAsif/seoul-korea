@@ -283,9 +283,9 @@ footer a:hover {
   right: 0;
 }
 @keyframes spin {
-  100% {
+  /* 100% {
     transform: rotate(360deg);
-  }
+  } */
 }
 .loader-video {
   height: 60px;
