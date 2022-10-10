@@ -22,7 +22,7 @@ body {
   background-color: #20b476;
 }
 .bg-team {
-  background-image: url("./group-3.jpeg");
+  background-image: url("./group-4.png");
   background-size: cover;
   height: 95vh;
   width: 100vw;
@@ -124,7 +124,6 @@ footer a:hover {
   border: 6px solid rgb(126, 217, 87) !important;
   padding: 14px;
   border-radius: 50%;
-  transition: all 1s ease-out;
 }
 /* change hamburger menu icon color */
 
@@ -133,8 +132,8 @@ footer a:hover {
 }
 .dropbtn {
   /* background-color: #04AA6d; */
-  background-color: black; /* needs to be same as .bg-dark */
-  color: white;
+  background-color: white; /* needs to be same as .bg-dark */
+  color: black;
   padding: 8px;
   font-size: 18px;
   border: none;
@@ -150,14 +149,14 @@ footer a:hover {
 .dropdown-content {
   display: none;
   position: static;
-  background-color: black;
+  background-color: white;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgb(0, 0, 0, 0.2);
   /* z-index: 1; */
 }
 
 .dropdown-content a {
-  color: white;
+  color: black;
   padding: 12px 12px;
   text-decoration: none;
   display: block;
@@ -165,21 +164,21 @@ footer a:hover {
 
 /* change color of dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 /* show dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 /* change background color of dropdown button when dropdown is shown */
 .dropdown:hover .dropbtn {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 /* do media stuff - support phone */
@@ -233,6 +232,7 @@ footer a:hover {
   background-color: white;
   border-radius: 8px;
   margin-bottom: 30px;
+  margin-left: 200px;
 }
 .practices-page {
   background-color: lightsalmon;
@@ -245,12 +245,12 @@ footer a:hover {
   width: 30vw;
 }
 .navbar-collapse {
-  background-color: black;
+  background-color: white;
   width: 300px;
   height: 100vh;
   position: relative;
   bottom: 74px;
-  transition: all 0.6s ease-in-out;
+  transition: all 0.1s ease-in;
 }
 .navbar-nav {
   width: 300px;
